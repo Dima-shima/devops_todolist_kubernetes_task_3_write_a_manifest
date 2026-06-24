@@ -9,5 +9,5 @@ open http://localhost:8081
 
 kubectl get pods -o wide -n todoapp
 kubectl exec -it -n todoapp busybox -- sh
-copy <id-todoapp pod>
-root@busybox:/]$ curl <id-todoapp pod>:8080
+copy <todoapp-pod-ip>
+root@busybox:/]$ curl http://<todoapp-pod-ip>:8080/health
